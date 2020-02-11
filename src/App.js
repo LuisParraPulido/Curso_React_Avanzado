@@ -1,6 +1,14 @@
 import React from 'react'
-import { Category } from './components/Category/index'
+import { ListOfCategories } from './components/ListOfCategorys'
+import { GlobalStyle } from './styles/GlobalStyles'
+import { ListOfPhotoCards } from './components/ListOfPhotoCards'
+import { Logo } from './components/Logo'
 
 export const App = () => (
-  <Category />
+  <div>
+    <Logo />
+    <GlobalStyle />
+    <ListOfCategories />
+    <ListOfPhotoCards />
+  </div>
 )
