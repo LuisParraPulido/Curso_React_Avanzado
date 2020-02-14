@@ -5,10 +5,12 @@
   "main": "index.js",
   "scripts": {
     "now-build": "npm run build",
-    "build": "webpack",
     "lint": "standard",
     "dev": "webpack-dev-server",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build":"webpack --mode development",
+    "start:dev": "npx serve dist -s",
+    "serve:dev": "webpack --mode 'development' && npx serve dist -s"
   },
   "repository": {
     "type": "git",
