@@ -23,6 +23,9 @@ const client = new ApolloClient({
       window.sessionStorage.removeItem('token')
       window.location.href = '/'
     }
+    if (networkError && networkError.result.code === 'INTERNAL_SERVER_ERROR') {
+      window.location.href = '/user'
+    }
   }
 })
 
